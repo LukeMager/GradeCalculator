@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luke's Grade Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+</head>
+<body onload="setUpPage()">
+<div id="title" class="w3-teal">Grade Calculator</div>
+<div id="myName" class="w3-green">By Luke Mager</div>
+<br>
+<div id="warning" class="w3-padding-16 w3-circle w3-pink">Weights Must Add to 100%</div>
+<br>
+<div id="container">
+    <div id="tableHolder"></div>
+
+    <input type="text" id="categoryName">
+    <button onclick="addCategory()" class ="w3-ripple w3-lime w3-round-xlarge">Add Category</button>
+</div>
+<button onclick="calculateCurrentGrade()" class ="w3-ripple w3-lime w3-round-xlarge">Calculate Current Grade</button>
+<div id="currentGrade"></div>
+<br>
+<div id="calcFinalGradeTable">
+    <table>
+        <tr>
+            <td>Desired Grade</td>
+            <td>Weight of Final Exam</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="desiredGrade" value="90"></td>
+            <td><input type="text" id="weightOfFinal" value="25"></td>
+        </tr>
+    </table>
+    <button onclick="calculateGradeNeeded()" class ="w3-ripple w3-lime w3-round-xlarge">Calculate Grade Needed</button>
+</div>
+<div id="gradeNeeded"></div>
+</body>
+</html>

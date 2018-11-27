@@ -1,0 +1,32 @@
+body{
+    position: relative;
+    text-align: center;
+    background-color: #59d89d;
+    font-family: AppleGothic;
+}
+
+#container {
+    width: 395px;
+    margin: auto;
+    text-align: center;
+}
+
+#calcFinalGradeTable{
+    width: 395px;
+    margin: auto;
+    text-align: center;
+}
+
+#warning{
+    width: 30%;
+    margin: auto;
+    font-size: 20px;
+}
+
+#title{
+    font-size: 40px;
+}
+
+#myName{
+    font-size: 20px;
+}
